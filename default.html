@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>webpage</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+       <script src="script.js"></script>
+    
+    <div id="a1" class="header">
+        <img id="logo" height="130px" width="130px" 
+            src="data:image/jpeg;base64,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" 
+            alt="Learning image" align="left"/>
+        <h1>Learning</h1>
+        <p>about HTML,css,jQuery</p>
+    </div>
+
+    <div class="nav">
+        <a href="#a1">Home</a>
+        <a href="#d2">Services</a>
+        <a href="#d3">About Us</a>
+        <a href="#d1">Contact</a>
+        <!--<input style="float:right; text-align:center; padding: 14px 20px;" type="text" id="searchtxt" />
+        <input style="float:right; text-align: center;  padding: 14px 20px;" type="button" value="search" onClick="replaceText();" id="highlightButton" />-->
+    </div>
+    
+    <div id="d2" class="main"> 
+        <div class="left">
+            <h2 >Services:</h2>
+           
+            <div id="myMenu">
+            <a id="q1" style="font-size:x-large;text-decoration:none;" href="https://www.w3schools.com/html/" target=_blank>HTML</a></div><br />
+            <div>
+            <a id="q1" style="font-size:x-large;text-decoration:none;" href="https://www.w3schools.com/css/" target=_blank>CSS</a></div><br />
+            <div>
+            <a id="q1" style="font-size:x-large;text-decoration:none;" href="https://www.w3schools.com/js/" target=_blank>Javascript</a></div><br />
+            <div>
+            <a id="q1" style="font-size:x-large;text-decoration:none;" href="https://www.w3schools.com/jquery/" target=_blank>jQuery</a></div><br />                        
+        </div>
+
+        <div class="content">
+            <h2 id="hh1">HTML</h2>
+            <div id="pp1">
+                <p>HTML is the core of every website. It contains every element a page contains: images, paragraphs, titles and other tags. We have a <a href="/html/tutorial/">free tutorial</a> series that will help you get started learning this essential markup (not programming) language. The lessons contain articles about&nbsp;tags, tag attributes, a list of important tags, links or anchor tags, images, tables, forms, text formatting and&nbsp;characters.</p>
+                <p>Use the <a href="/html/tags/">HTML tag list</a> to find the correct use of each element or use the <a href="/html/generator/">code generators</a>&nbsp;and grab the markup with a minimum amount&nbsp;of&nbsp;clicks.</p>
+            </div>
+            <h2 id="hh2">CSS</h2>
+            <div id="pp2">
+                <p><img src="/images/tiles/css-editor.jpg" style="float: right; max-width: 250px; margin: 0 0 5px 20px" alt="css editor" />Cascading Style Sheets give the look of you web pages. They specify the color and size of each element. They position the sections on the page and specify other design attributes. They are placed in .css file extensions and linked to the documents. The <a target="_blank" rel="external nofollow" href="https://htmlcheatsheet.com/css/">CSS cheat sheet</a> will give you an idea about what this really means and will help you easily generate the desired&nbsp;styles.</p>
+                <p>Make sure to check out our <a href="/css/generator/text-shadow/">text shadow gallery</a>, <a href="/css/generator/gradient/">gradient generator</a>, <a target="_blank" rel="external nofollow" href="https://divtable.com/table-styler/">table styler</a>, border creator, <a target="_blank" rel="external nofollow" href="https://rgbcolorcode.com/">RGB color picker</a> and others in&nbsp;the&nbsp;navigation.</p>
+            </div>
+            <h2 id="hh3">JavaScript (JS)</h2>
+            <div id="pp3">
+                <p>Often confused with the Java programming language, the JavaScript or simply JS makes your site interactive. If you know HTML, CSS and JavaScript you can start developing <a target="_blank" rel="external nofollow" href="https://pestgame.com/">simple online games</a>. JS is used to validate forms before submitting, to animate slideshows, and to bring the&nbsp;site&nbsp;alive.</p>
+                <p>We have <a href="/js/editor/">JS editor</a> and <a href="/js/compressor/">compressor</a> and even a <a target="_blank" rel="external nofollow" href="https://html-online.com/articles/category/javascript/">blog about the topic</a>. Check them out and use them on a daily basis to make your&nbsp;life&nbsp;easier.</p>
+                <p>We are experts in HTML, CSS and JavaScript. Nobody knows better them than we do. They together provide the <a target="_blank" rel="external nofollow" href="https://en.wikipedia.org/wiki/Client-side">client-side of the web</a> and we're going to make your life easier if you're going to use our online tool collection. We've spent countless hours to become the very best in the field.</p>
+            </div>
+            <p><b>search for langauges/prices:  </b><input id="myInput" type="text" placeholder="Search langauge"></p>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Langauge</th>
+                        <th>Price</th>
+                  </tr>
+                  </thead>
+                  <tbody id="table1">
+                      <tr>
+                        <td>h1</td>
+                        <td>HTML</td>
+                        <td>500/-</td>
+                      </tr>
+                  <tr>
+                    <td>c2</td>
+                    <td>CSS</td>
+                    <td>550/-</td>
+                  </tr>
+                  <tr>
+                    <td>j1</td>
+                    <td>Javascript</td>
+                    <td>1000/-</td>
+                  </tr>
+                  <tr>
+                    <td>j2</td>
+                    <td>jQuery</td>
+                    <td>750/-</td>
+                  </tr>
+                  </tbody>
+                </table>
+        </div>
+            
+    </div>
+
+
+
+    <h2 id="d3" style="text-align:center;">About us</h2>
+    <p style="text-align:center;">
+        We provide best knowledge about css, html, jQuery, javascript.
+    </p>
+
+    <div id="d1" class="footer">
+        <h2>xyz corporation</h2>
+        <p>111,abc soc.,zzz Road, Surat.</p>
+        <p>Contact no.<b>9999999999</b></p>
+        <h3>Mr. kkkk cccc</h3>
+    </div>
+
+    </body>
+</html>

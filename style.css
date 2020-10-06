@@ -1,0 +1,145 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+body
+{
+    font-family:Arial,Times New Roman,Sans-Serif;
+    margin:0;
+	background-color: tan;
+    color: black;
+}
+
+.header
+{
+    text-align:center;
+    background-color:lightgreen;
+    color:Maroon;
+    padding:30px;
+    //flex:1;
+}
+
+.header h1
+{
+    font-size:xx-large;
+}
+
+#logo
+{
+    padding:0px;
+    display:block;
+    max-width:100%;
+    max-height:100%;
+    border:2px solid black;
+    background-position:top left;
+    left:-15px;
+    position:relative; 
+    top:-15px;   
+}
+
+.nav
+{
+    width:100%;
+    background-color:Black;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0; 
+}
+.nav a
+{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.nav a:hover
+{
+    background-color:lightblue;
+    color:Black;
+    border:2px solid black;
+}
+
+.main
+{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  border-bottom: 2px solid black;
+}
+
+.left
+{
+    -ms-flex: 30%;
+    flex:30%;
+    background-color:Lightblue;
+    padding:20px;
+    border-right: 1px solid black;
+    //width:30%
+}
+
+.content
+{
+    -ms-flex: 70%;
+    flex:70%;
+   // width=70%;
+    background-color:lightGray;
+    padding:5%;
+
+}
+
+.footer
+{
+    padding:20px;
+    text-align:center;
+    background:black;
+    color:White;
+}
+
+#i1
+{
+    max-width:100%;
+    max-height:100%;
+}
+
+@media screen and (max-width:700px)
+{
+    .main
+    {
+        flex-direction: column;
+        background-color:Purple;
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    .nav a
+    {
+        float:none;
+        width:100%;
+    }
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+th
+{
+    background-color:Black;
+    color:White
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: lightgreen;
+}
